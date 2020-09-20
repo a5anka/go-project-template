@@ -15,3 +15,7 @@ test:
 .PHONY: docker
 docker: build
 	docker image build .
+
+.PHONY: clean
+clean:
+	@rm -rf $(BUILD_ROOT)
